@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+회원가입  form
+{% endblock %}
+
+{% block body %}
+<body>
+    <form action='/users/create', method='POST'>
+        username : <input type='text' name='username'> <br>
+        email : <input type='email' name='email'> <br>
+        <input type='submit' value='회원가입'>
+    </form>
+    
+</body>
+{% endblock %}

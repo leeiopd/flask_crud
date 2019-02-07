@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<body>
+    <h1>회원 명부</h1>
+    {% for user in users %}
+        <li>{{user.id}} : {{user.username}}</li>
+        <li>{{user.email}}</li>
+        <a href="/users/read/{{user.id}}">상세보기</a>
+        <hr>
+    {% endfor %}
+</body>
+{% endblock %}
